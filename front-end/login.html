@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Đăng ký | UET Gram</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  	<link rel="stylesheet" type="text/css" href="css/login.css">
+</head>
+<body>
+
+	<!-- Navigation bar -->
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">UET Gram</a>
+			</div> <!-- end div navbar-header -->
+			<ul class="nav navbar-nav">
+				<li><a href="#">Ảnh cá nhân</a></li>
+				<li><a href="#">Theo dõi</a></li>
+			</ul>
+			<form class="navbar-form navbar-left">
+				<div class="form-group">
+					<input type="text" class="form-control" id="edtSearch" placeholder="Tìm kiếm">
+				</div>
+				<button type="button" class="btn btn-default" id="btnSearch"><span class="glyphicon glyphicon-search"></span> Tìm</button>
+			</form>
+			<ul class="nav navbar-nav navbar-right">
+				<li><button type="button" class="btn btn-default navbar-btn" id="btnUpload"><span class="glyphicon glyphicon-cloud-upload"></span> Tải ảnh lên</button></li>
+				<li><a href="register.html"><span class="glyphicon glyphicon-user" id="btnRegister"></span> Đăng ký</a></li>
+				<li><a href="login.html"><span class="glyphicon glyphicon-log-in" id="btnLogin"></span> Đăng nhập</a></li>
+			</ul>
+		</div> <!-- end div container-fluid -->
+	</nav> <!--end navbar-inverse -->
+
+	<!-- Body -->
+	<div class="container-fluid text-center">
+		<div class="row content">
+
+			<div class="col-sm-2 sidenav">
+				<p>Khung bên trái</p>
+			</div> <!-- end div left sidenav -->
+		
+			<div class="col-sm-8 text-center centernav">
+				<h1 id="txtRegister">Đăng ký tài khoản</h1>
+				<form class="form-horizontal">
+					<div class="form-group">
+						<label class="control-label col-sm-4" for="account">Tài khoản:</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" id="edtAccount" placeholder="Nhập tên tài khoản">
+						</div>
+					</div> <!-- end div form-group -->
+					<div class="form-group">
+						<label class="control-label col-sm-4" for="password">Mật khẩu:</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" id="edtPassword" placeholder="Nhập mật khẩu">
+						</div>
+					</div> <!-- end div form-group -->
+					<div class="form-group">
+						<div class="col-sm-15">
+							<button type="submit" class="btn btn-default" id="btnSubmitLogin">Đăng nhập</button>
+						</div>
+					</div>
+					<div class="form-group">
+						<p>Chưa có tài khoản?</p>
+						<a href="register.html"><button type="button" class="btn btn-default"><span class="glyphicon glyphicon-log-in" id="btnLogin"></span> Đăng ký</button></a>
+					</div>
+				</form>
+			</div> <!-- end div center -->
+
+			<div class="col-sm-2 sidenav">
+				<p>Khung bên phải</p>
+			</div> <!-- end div right sidenav -->
+
+		</div> <!-- end div row content -->
+	</div> <!-- end div container-fluid -->
+
+	<!-- footer -->
+	<footer class="container-fluid text-center"> 
+  		<p>Footer Text</p>
+	</footer> <!-- end footer -->
+</body>
+</html>
